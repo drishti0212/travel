@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: beige;
+        }
+        footer{
+            background: #494949;
+            padding-top: 50px;
+        }
+        .container{
+            width: 1140px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .footer{
+            width: 33.3%;
+        }
+        h3{
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .footer-content p{
+            width: 190px;
+            margin: auto;
+            padding: 7px;
+        }
+        .footer-content ul{
+            text-align: center;
+        }
+        .list{
+            padding: 0;
+        }
+        .list li{
+            width: auto;
+            text-align: center;
+            list-style-type: none;
+            padding: 7px;
+            position: relative;
+        }
+        .list li::before{
+            content: '';
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 100%;
+            width: 0;
+            height: 2px;
+            background: #d59e6e;
+            transition-duration: .5s;
+        }
+        .list li:hover::before{
+            width: 70px;
+        }
+        .social-icons li{
+            display: inline-block;
+            text-align: center;
+            padding: 5px;
+        }
+        .social-icons i{
+            color: rgb(13, 13, 4);
+            font-size: 25px;
+        }
+        a{
+            text-align: none;
+        }
+        a:hover{
+            color: #000000;
+        }
+        .bottom-bar{
+            background: #f18930;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+        .bottom-bar p{
+            color: #2f2e2e;
+            margin: 0;
+            font-size: 16px;
+            padding: 7px;
+        }
+        
+        body{
+            background-image: url(ocean\ 3.jpeg);
+            min-height: 100vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /*url('https://c.myholidays.com/blog/blog/content/images/2020/11/Places-To-Visit-In-India.webp'); */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- <a href="index.html"><img class="logo" src="img/1.png"></a> -->
+        <div class="nav-links" id="navlinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <!-- <li><a href="#team">TEAM</a></li> -->
+                <li><a href="galary.html">DESTINATION</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="./cu.html">REGISTER</a></li>
+
+            </ul>
+
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()" style="color: hsla(196, 92%, 49%, 0);"></i>
+    </nav>
+    <section id="course"class="course" style="background-color: hsla(211, 92%, 49%, 0.226);">
+        <h1 style="color: rgb(1, 0, 0);">ABOUT US<br><p><h1 style="color: rgb(15, 5, 5);"> "WHO WE ARE" </h2><br><br><h4 style="color: rgb(9, 9, 9); font-size: larger;"<center>TourNest Travel,is the largest independently owned travel agency headquartered in India.<br> we are committed to minimizing our impact on the environment and supporting local communities wherever we go<br><p><h4 style="color: #000000; font-size: larger;">We provides travel and tourism-related services to the general public on behalf of accommodation or travel suppliers to offer different kinds of travelling packages for each destination.</p></h><br><section id="course"class="course" style="color: hsla(0, 92%, 49%, 0.176);">
+            <h1 style="color: black;">OUR SERVICES</h1>
+            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolores!</p> -->
+    
+            <div class="row">
+                <div class="course-col">
+                    <h3 style="color: black; font-size: large;">HOTEL RESERVATION</h3>
+                  <p>We assist visitors in reserving hotels according to their needs. You can get the hotel of your expectation ranging from luxury to the ones within your budget. If you wish to enjoy a hassle-free vacation while traveling to this island, contact the best travel agency in Andaman to ensure that the bookings are made accurately and efficiently.</p>
+                </div>
+                <div class="course-col">
+                    <h3 style="color: black; font-size: large;">ITINEARY PLANNING</h3>
+                    <p>Based on customer preferences,We create detailed travel itineraries, including destinations, accommodations, activities, and transportation options. we consider several factors, such as travel dates, budget-related concerns, and client requests.</p>
+                </div>
+                <div class="course-col">
+                    <h3 style="color: black; font-size: large;">CAR RENTAL SERVICES</h3>
+                <p>We provide services such as car rentals for visitors. If you wish to enjoy a luxurious travel without interference, then you can get help from your tour operator with car rental. Select the vehicle of your choice and travel to the destination that you desire. You can also enjoy services like pick and drop, experienced drivers, including more.</p></div>
+            </div>
+        </section>    
+        <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolores!</p> -->
+
+    </section>
+</body>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p><h4>Email : travelIndia@123.com</h4></p>
+            <a href = "mailto: travelindia@123.com">Send Email</a>
+            <p><h4>Phone : 8839713231</h4></p>
+            <p><h4>Address : Ramdaspeth Nagpur</h4></p>
+            
+        </div>
+        <div class="footer-content">
+
+        </div>
+        <div class="footer-content"></div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy;Copyright 2023 Tournest. All rights reserved</p>
+</div> 
+</footer>
+</html>
